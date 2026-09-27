@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemBank | Real Problems. Young Solutions.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PB <span>ProblemBank</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#how">How It Works</a>
+        <a href="#impact">Impact</a>
+        <a href="#report">Report a Problem</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div>
+        <p class="tag">REAL PROBLEMS. YOUNG SOLUTIONS.</p>
+
+        <h1>Turn community problems into <span>real solutions.</span></h1>
+
+        <p class="hero-text">
+            ProblemBank connects real-world problems with young innovators,
+            mentors, organizations and communities to create solutions that
+            actually make an impact.
+        </p>
+
+        <div class="buttons">
+            <a href="#explore" class="btn primary">Explore Problems</a>
+            <a href="#report" class="btn secondary">Report a Problem</a>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="circle">PB</div>
+        <h3>Problem → Solution</h3>
+        <p>One platform. A whole ecosystem of change.</p>
+    </div>
+</section>
+
+<section id="how" class="section">
+    <p class="tag">HOW IT WORKS</p>
+    <h2>From a problem to measurable impact</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <b>01</b>
+            <h3>Identify</h3>
+            <p>Communities report genuine problems.</p>
+        </div>
+
+        <div class="step">
+            <b>02</b>
+            <h3>Verify</h3>
+            <p>ProblemBank checks and categorizes them.</p>
+        </div>
+
+        <div class="step">
+            <b>03</b>
+            <h3>Match</h3>
+            <p>Problems are connected with suitable innovators.</p>
+        </div>
+
+        <div class="step">
+            <b>04</b>
+            <h3>Solve</h3>
+            <p>Young teams develop practical solutions.</p>
+        </div>
+
+        <div class="step">
+            <b>05</b>
+            <h3>Test</h3>
+            <p>Solutions are tested with real communities.</p>
+        </div>
+
+        <div class="step">
+            <b>06</b>
+            <h3>Impact</h3>
+            <p>Successful solutions are measured and scaled.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="explore" class="section explore">
+    <p class="tag">PROBLEM EXPLORER</p>
+    <h2>Find a problem worth solving</h2>
+
+    <div class="filters">
+        <button onclick="filterProblems('all')">All</button>
+        <button onclick="filterProblems('Environment')">Environment</button>
+        <button onclick="filterProblems('Education')">Education</button>
+        <button onclick="filterProblems('Agriculture')">Agriculture</button>
+        <button onclick="filterProblems('Accessibility')">Accessibility</button>
+        <button onclick="filterProblems('Safety')">Safety</button>
+    </div>
+
+    <div id="problemList" class="problem-grid">
+
+        <div class="problem-card" data-category="Safety">
+            <span>SAFETY</span>
+            <h3>Unsafe school-zone traffic</h3>
+            <p>
+                Students face dangerous traffic conditions near a school
+                during arrival and departure times.
+            </p>
+            <small>👥 Community problem</small>
+        </div>
+
+        <div class="problem-card" data-category="Environment">
+            <span>ENVIRONMENT</span>
+            <h3>Plastic waste after events</h3>
+            <p>
+                Local events generate large amounts of plastic waste with
+                limited recycling systems.
+            </p>
+            <small>🌱 Environmental problem</small>
+        </div>
+
+        <div class="problem-card" data-category="Agriculture">
+            <span>AGRICULTURE</span>
+            <h3>Shared farm equipment gap</h3>
+            <p>
+                Small farmers struggle to access expensive agricultural
+                equipment when needed.
+            </p>
+            <small>🌾 Rural problem</small>
+        </div>
+
+        <div class="problem-card" data-category="Accessibility">
+            <span>ACCESSIBILITY</span>
+            <h3>Digital access for elderly residents</h3>
+            <p>
+                Some elderly residents struggle to use essential digital
+                public services.
+            </p>
+            <small>🤝 Inclusion problem</small>
+        </div>
+
+        <div class="problem-card" data-category="Education">
+            <span>EDUCATION</span>
+            <h3>Unused learning resources</h3>
+            <p>
+                Useful books and educational materials remain unused while
+                students nearby lack resources.
+            </p>
+            <small>📚 Education problem</small>
+        </div>
+
+    </div>
+</section>
+
+<section id="impact" class="impact section">
+
+    <p class="tag">OUR MISSION</p>
+    <h2>We measure problems solved, not ideas submitted.</h2>
+
+    <div class="stats">
+        <div>
+            <strong>25+</strong>
+            <p>Demo Problems</p>
+        </div>
+
+        <div>
+            <strong>50+</strong>
+            <p>Potential Innovators</p>
+        </div>
+
+        <div>
+            <strong>10+</strong>
+            <p>Solution Areas</p>
+        </div>
+
+        <div>
+            <strong>∞</strong>
+            <p>Possibilities</p>
+        </div>
+    </div>
+
+    <p class="demo-note">
+        *These numbers are prototype/demo figures for presentation purposes.
+    </p>
+</section>
+
+<section class="section partners">
+    <p class="tag">THE ECOSYSTEM</p>
+    <h2>Everyone has a role in solving a problem.</h2>
+
+    <div class="partner-grid">
+
+        <div>
+            <h3>🏘️ Communities</h3>
+            <p>Report problems and test solutions.</p>
+        </div>
+
+        <div>
+            <h3>💡 Young Innovators</h3>
+            <p>Build creative and practical solutions.</p>
+        </div>
+
+        <div>
+            <h3>🧠 Mentors</h3>
+            <p>Guide teams with knowledge and experience.</p>
+        </div>
+
+        <div>
+            <h3>🏢 Organizations</h3>
+            <p>Provide funding, technology and opportunities.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="report" class="section report">
+
+    <p class="tag">REPORT A PROBLEM</p>
+    <h2>Have a real problem in your community?</h2>
+
+    <form id="problemForm">
+
+        <input type="text" id="title" placeholder="Problem title" required>
+
+        <select id="category" required>
+            <option value="">Select category</option>
+            <option>Environment</option>
+            <option>Education</option>
+            <option>Agriculture</option>
+            <option>Accessibility</option>
+            <option>Safety</option>
+        </select>
+
+        <textarea id="description"
+            placeholder="Describe the problem..."
+            required></textarea>
+
+        <input type="text" id="location"
+            placeholder="Location / Community" required>
+
+        <input type="number" id="people"
+            placeholder="Approx. people affected" required>
+
+        <button type="submit" class="btn primary">
+            Submit Problem
+        </button>
+
+    </form>
+
+    <p id="successMessage"></p>
+
+</section>
+
+<footer>
+    <h3>PB ProblemBank</h3>
+    <p>Real Problems. Young Solutions.</p>
+    <p>© 2026 ProblemBank Prototype</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
